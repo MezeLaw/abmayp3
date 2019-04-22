@@ -10,6 +10,7 @@ struct Empleado{
     char apellido[100];
     int documento;
     char puesto[100];
+
 };
 
 
@@ -59,7 +60,9 @@ int main() {
                 if(array_empleados[i].documento=='\0'){
                     array_empleados[i] = empleado;
                 }
-            }''
+            }
+
+            main();
 
         } else if(opcion==2){
             printf("opcion 2");
@@ -68,7 +71,18 @@ int main() {
         } else if(opcion==4){
             printf("opcion 4");
         } else if(opcion==5){
-            printf("Opcion 5");
+            //Esto imprime mal, arreglar.
+            for(int j=0; j<100; j++){
+                if(array_empleados[j].documento=='\0'){
+
+                } else{
+
+                struct Empleado e = array_empleados[j];
+                printf("%s", e.puesto);
+                printf(" ");
+                }
+            }
+
         } else{
             //Si no elegio alguna, vuelvo a mostrar el menu.
             main();
