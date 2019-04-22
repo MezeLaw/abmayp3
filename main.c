@@ -76,7 +76,7 @@ int main() {
                 if(array_empleados[j].documento=='\0'){
 
                 } else{
-
+                //Ver si esto funca. Es para validar que solo lo haga con los casos que tienen un empleado.
                 struct Empleado e = array_empleados[j];
                 printf("%s", e.puesto);
                 printf(" ");
